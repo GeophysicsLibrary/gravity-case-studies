@@ -3,7 +3,14 @@
 In this lesson, we'll explore the gravity data from a few different locations
 and discuss what it can tell us about the isostatic state of the lithosphere.
 
-Lesson concept. What is the expected student level (grad, undergrad, etc).
+The lesson is designed for graduate and undergraduate students who have a
+background in geology and geophysics and some knowledge of the theoretical
+concepts of gravity anomalies and isostasy.
+The overall goal is to introduce learners to real world examples and data that
+illustrate the theoretical concepts that they have already acquired.
+We'll do this by providing learners with the data and tools for
+exploring it interactively.
+The full lesson will take approximately 1.5 hours to complete.
 
 
 ## Learning objectives
