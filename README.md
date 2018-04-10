@@ -13,18 +13,17 @@ background in geology and geophysics and some knowledge of the theoretical
 concepts of gravity anomalies and isostasy.
 The overall goal is to introduce learners to real world examples and data that
 illustrate the theoretical concepts that they have already acquired.
-We'll do this by providing learners with the data and tools for
-exploring it interactively.
+We'll do this by providing learners with data and the tools for exploring it
+interactively.
 The full lesson will take approximately 1.5 hours to complete.
 
 
 ## Learning objectives
 
-* Reinforce theoretical concepts with real world data examples
+* Reinforce theoretical concepts with real world examples
 * Explore the relationship between plate tectonics, isostasy, and the gravity
-  disturbance
 * Visualize glacial isostatic rebound and flexure of the lithosphere at
-  convergent margins
+  convergent margins and their effects on the Earth's gravity field
 
 
 ## Prerequisites
@@ -32,6 +31,8 @@ The full lesson will take approximately 1.5 hours to complete.
 This lesson assumes basic knowledge of:
 
 * The layering of the Earth (crust, mantle, core, lithosphere, asthanosphere)
+  <[Wikipedia](https://en.wikipedia.org/wiki/Structure_of_the_Earth)>
+  <[SEG wiki](https://wiki.seg.org/wiki/Layers_of_the_Earth)>
 * The Earth gravity field (gravitational and rotational components) and Normal
   gravity
 * The gravity disturbance
