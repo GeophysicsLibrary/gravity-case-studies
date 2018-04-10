@@ -20,7 +20,14 @@ The full lesson will take approximately 1.5 hours to complete.
 
 ## Prerequisites
 
-* What we assume you know.
+This lesson assumes basic knowledge of:
+
+* The layering of the Earth (crust, mantle, core, lithosphere, asthanosphere)
+* Isostasy (Airy–Heiskanen, Pratt-Hayford, and Vening Meinesz models)
+* The Earth gravity field (gravitational and rotational components) and Normal
+  gravity
+* The gravity disturbance
+* The gravitational effect of topography and the Bouguer correction
 
 
 ## Further reading
