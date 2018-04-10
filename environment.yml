@@ -1,0 +1,20 @@
+name: case-studies-gravity
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=2.7
+    - pip
+    - numpy
+    - scipy
+    - pandas
+    - xarray
+    - numba
+    - jupyter
+    - ipython
+    - ipywidgets
+    - matplotlib
+    - basemap
+    - basemap-data-hires
+    - cartopy
+    - fatiando=0.5
