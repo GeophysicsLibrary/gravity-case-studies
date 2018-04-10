@@ -3,6 +3,11 @@
 In this lesson, we'll explore the gravity data from a few different locations
 and discuss what it can tell us about the isostatic state of the lithosphere.
 
+![Banner image with the data used]()
+
+
+## Concept
+
 The lesson is designed for graduate and undergraduate students who have a
 background in geology and geophysics and some knowledge of the theoretical
 concepts of gravity anomalies and isostasy.
@@ -15,7 +20,11 @@ The full lesson will take approximately 1.5 hours to complete.
 
 ## Learning objectives
 
-* Something
+* Reinforce theoretical concepts with real world data examples
+* Explore the relationship between plate tectonics, isostasy, and the gravity
+  disturbance
+* Visualize glacial isostatic rebound and flexure of the lithosphere at
+  convergent margins
 
 
 ## Prerequisites
@@ -23,11 +32,12 @@ The full lesson will take approximately 1.5 hours to complete.
 This lesson assumes basic knowledge of:
 
 * The layering of the Earth (crust, mantle, core, lithosphere, asthanosphere)
-* Isostasy (Airy–Heiskanen, Pratt-Hayford, and Vening Meinesz models)
 * The Earth gravity field (gravitational and rotational components) and Normal
   gravity
 * The gravity disturbance
 * The gravitational effect of topography and the Bouguer correction
+* Isostasy (Airy–Heiskanen, Pratt-Hayford, and Vening Meinesz models) and it's
+  relationship with the topography-free gravity disturbance
 
 
 ## Further reading
