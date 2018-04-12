@@ -14,7 +14,6 @@ dependencies:
     - ipython
     - ipywidgets
     - matplotlib
-    - basemap
-    - basemap-data-hires
     - cartopy
+    - cmocean=1.1
     - fatiando=0.5
