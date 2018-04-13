@@ -31,20 +31,22 @@ def plot_field(ax, data, field, cmap=None, gridline_spacing=3, cb_pad=0.03,
         cbar_kwargs=dict(orientation='horizontal', aspect=cb_aspect,
                          pad=cb_pad, shrink=cb_shrink),
         **kwargs)
+    xlocs = np.arange(w, e + 0.01, gridline_spacing)
+    ylocs = np.arange(s, n + 0.01, gridline_spacing)
     ax.coastlines()
     ax.set_extent([w, e, s, n])
-    ax.set_xticks(np.arange(w, e + 0.01, gridline_spacing))
-    ax.set_yticks(np.arange(s, n + 0.01, gridline_spacing))
+    ax.set_xticks(xlocs)
+    ax.set_yticks(ylocs)
     ax.xaxis.set_major_formatter(LongitudeFormatter())
     ax.yaxis.set_major_formatter(LatitudeFormatter())
-    ax.gridlines(color="#cccccc55")
+    ax.gridlines(color="#cccccc55", xlocs=xlocs, ylocs=ylocs)
 
 
 def plot_hawaii_data(data, field, **kwargs):
     """
     Plot a given field from our Hawai'i dataset.
     """
-    fig = plt.figure(figsize=(9, 13))
+    fig = plt.figure(figsize=(9, 11))
     ax = plt.axes(projection=ccrs.PlateCarree())
     plot_field(ax, data, field, **kwargs)
     plt.tight_layout(pad=0)
