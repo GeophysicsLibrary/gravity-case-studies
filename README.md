@@ -3,9 +3,9 @@
 In this lesson, we'll explore the gravity data from a few different locations
 and discuss what it can tell us about the isostatic state of the lithosphere.
 
-**Run the notebooks online:** [![run on Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/GeophysicsLibrary/gravity-case-studies/master?filepath=notebooks%2Findex.ipynb)
-
-**View static versions of the notebooks:** [![view on nbviewer](https://img.shields.io/badge/view-nbviewer-brightgreen.svg)](http://nbviewer.jupyter.org/github/geophysicslibrary/gravity-case-studies/blob/master/notebooks/index.ipynb)
+| *Run* notebooks online | *View* static versions |
+|:--------------:|:--------------:|
+| [![run on Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/GeophysicsLibrary/gravity-case-studies/master?filepath=notebooks%2Findex.ipynb) | [![view on nbviewer](https://img.shields.io/badge/view-nbviewer-brightgreen.svg)](http://nbviewer.jupyter.org/github/geophysicslibrary/gravity-case-studies/blob/master/notebooks/index.ipynb) |
 
 ![Example profile along the Hawaiian islands](banner.png)
 
