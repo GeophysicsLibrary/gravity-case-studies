@@ -3,7 +3,7 @@
 In this lesson, we'll explore the gravity data from a few different locations
 and discuss what it can tell us about the isostatic state of the lithosphere.
 
-![Banner image with the data used]()
+![Example profile along the Hawaiian islands](banner.png)
 
 
 **Run the notebooks online:** [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/GeophysicsLibrary/gravity-case-studies/master?filepath=notebooks%2Findex.ipynb)
