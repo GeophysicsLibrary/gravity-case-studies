@@ -26,11 +26,11 @@ def plot_field(ax, data, field, cmap=None, gridline_spacing=3, cb_pad=0.03,
     w, e, s, n = [data.longitude.min(), data.longitude.max(),
                   data.latitude.min(), data.latitude.max()]
     ax.set_title(field)
-    data[field].plot.pcolormesh(
-        ax=ax, add_labels=False, cmap=cmap,
-        cbar_kwargs=dict(orientation='horizontal', aspect=cb_aspect,
-                         pad=cb_pad, shrink=cb_shrink),
-        **kwargs)
+    if 'add_colorbar' not in kwargs:
+        kwargs['cbar_kwargs'] = dict(orientation='horizontal',
+                                     aspect=cb_aspect, pad=cb_pad,
+                                     shrink=cb_shrink)
+    data[field].plot.pcolormesh(ax=ax, add_labels=False, cmap=cmap, **kwargs)
     xlocs = np.arange(w, e + 0.01, gridline_spacing)
     ylocs = np.arange(s, n + 0.01, gridline_spacing)
     ax.coastlines()
@@ -46,7 +46,7 @@ def plot_hawaii_data(data, field, **kwargs):
     """
     Plot a given field from our Hawai'i dataset.
     """
-    fig = plt.figure(figsize=(9, 11))
+    fig = plt.figure(figsize=(12, 13))
     ax = plt.axes(projection=ccrs.PlateCarree())
     plot_field(ax, data, field, **kwargs)
     plt.tight_layout(pad=0)
