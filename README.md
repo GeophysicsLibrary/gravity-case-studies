@@ -6,6 +6,9 @@ and discuss what it can tell us about the isostatic state of the lithosphere.
 ![Banner image with the data used]()
 
 
+**Run the notebooks online:** [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/GeophysicsLibrary/gravity-case-studies/master?filepath=notebooks%2Findex.ipynb)
+
+
 ## Concept
 
 The lesson is designed for graduate and undergraduate students who have a
