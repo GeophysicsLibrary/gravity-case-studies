@@ -74,7 +74,7 @@ def plot_himalayas_data(data, field, **kwargs):
     """
     fig = plt.figure(figsize=(12, 13))
     ax = plt.axes(projection=ccrs.PlateCarree())
-    plot_field(ax, data, field, **kwargs)
+    plot_field(ax, data, field, gridline_spacing=5, **kwargs)
     plt.tight_layout(pad=0)
 
 
@@ -101,13 +101,14 @@ class ProfileSelector(object):
     """
 
     def __init__(self, data, fields, projection, figsize=(15, 9),
-                 profile_interval=10):
+                 profile_interval=10, dimension='latitude'):
         self.data = data
         self.fields = fields
         self._plot_initiated = False
         self.projection = projection
         self.figsize = figsize
         self.profile_interval = profile_interval
+        self.default_dimension = dimension
 
     def plot(self, location, dimension):
         """
@@ -116,7 +117,7 @@ class ProfileSelector(object):
         if not self._plot_initiated:
             # Setup the figure and subplot grid
             self.fig = plt.figure(figsize=self.figsize)
-            grid = GridSpec(2, 3, hspace=0, wspace=0)
+            grid = GridSpec(2, 4, hspace=0, wspace=0)
             self.ax_data = self.fig.add_subplot(grid[0,:-1])
             self.ax_topo = self.fig.add_subplot(grid[1,:-1])
             self.ax_data_map = self.fig.add_subplot(grid[0,-1],
@@ -208,17 +209,18 @@ class ProfileSelector(object):
         Display an interactive widget for choosing the profile.
         """
         # Setup the initial value options for the location
-        options = self.data.longitude.values.tolist()[::self.profile_interval]
+        dim = self.default_dimension
+        dim2 = set(self.data.dims).difference({dim}).pop()
+        options = self.data[dim2].values.tolist()[::self.profile_interval]
         mid = options[len(options)//2]
-        dimension = 'longitude'
 
         # Make the slider for choosing the location
-        slider_label = widgets.Label("at {} value".format(dimension))
+        slider_label = widgets.Label("at {} value".format(dim2))
         slider = widgets.SelectionSlider(options=options, value=mid,
                                          layout=widgets.Layout(width="350px"))
         # Make a menu for choosing the profile direction
         dimension_chooser = widgets.Dropdown(
-            options=self.data.dims.keys(), value=self.data.dims.keys()[0],
+            options=self.data.dims.keys(), value=dim,
             description="Profile along")
 
         def displayer(location, dimension):
