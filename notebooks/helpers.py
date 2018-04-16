@@ -35,8 +35,8 @@ def plot_field(ax, data, field, cmap=None, gridline_spacing=3, cb_pad=0.03,
                                      shrink=cb_shrink)
     data[field].plot.pcolormesh(ax=ax, add_labels=False, cmap=cmap, **kwargs)
     ax.coastlines()
-    w, e, s, n = [data.longitude.min(), data.longitude.max(),
-                  data.latitude.min(), data.latitude.max()]
+    w, e, s, n = [data.longitude.values.min(), data.longitude.values.max(),
+                  data.latitude.values.min(), data.latitude.values.max()]
     ax.set_extent([w, e, s, n])
     xlocs = np.arange(w, e + 0.01, gridline_spacing)
     ylocs = np.arange(s, n + 0.01, gridline_spacing)
@@ -51,6 +51,26 @@ def plot_field(ax, data, field, cmap=None, gridline_spacing=3, cb_pad=0.03,
 def plot_hawaii_data(data, field, **kwargs):
     """
     Plot a given field from our Hawai'i dataset.
+    """
+    fig = plt.figure(figsize=(12, 13))
+    ax = plt.axes(projection=ccrs.PlateCarree())
+    plot_field(ax, data, field, **kwargs)
+    plt.tight_layout(pad=0)
+
+
+def plot_japan_data(data, field, **kwargs):
+    """
+    Plot a given field from our Japan dataset.
+    """
+    fig = plt.figure(figsize=(12, 13))
+    ax = plt.axes(projection=ccrs.PlateCarree())
+    plot_field(ax, data, field, gridline_spacing=5, **kwargs)
+    plt.tight_layout(pad=0)
+
+
+def plot_himalayas_data(data, field, **kwargs):
+    """
+    Plot a given field from our Himalayas dataset.
     """
     fig = plt.figure(figsize=(12, 13))
     ax = plt.axes(projection=ccrs.PlateCarree())
@@ -137,8 +157,7 @@ class ProfileSelector(object):
                        cmap=cmocean.cm.delta)
             # Draw on the maps showing the profiles
             self._datamap_profile, = self.ax_data_map.plot([0, 0], [0, 0],
-                                                           '--',
-                                                           color='#aaaaaa')
+                                                           '--k')
             self._topomap_profile, = self.ax_topo_map.plot([0, 0], [0, 0],
                                                            '--k')
 
