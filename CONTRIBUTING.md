@@ -12,7 +12,7 @@ There are many ways to contribute:
 * Writing code or new examples for everyone to use
 
 If you get stuck at any point you contact us by creating an [issue on
-GitHub](https://github.com/GeophysicsLibrary/case-studies-gravity/issues) at
+GitHub](https://github.com/GeophysicsLibrary/gravity-case-studies/issues) at
 one of the other channels mentioned below.
 
 For more information on contributing to open source projects,
@@ -30,10 +30,10 @@ carefully.
 
 ## What Can I Do?
 
-* Tackle any open [issues](https://github.com/GeophysicsLibrary/case-studies-gravity/issues)
+* Tackle any open [issues](https://github.com/GeophysicsLibrary/gravity-case-studies/issues)
   you wish! We have a special label for issues that beginners might want to
   try. Have a look at our
-  ["good first issues" list](https://github.com/GeophysicsLibrary/case-studies-gravity/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+  ["good first issues" list](https://github.com/GeophysicsLibrary/gravity-case-studies/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 * Contribute material you already have. It doesn't need to be perfect! We will
   help you clean things up, test it, etc.
 * Provide feedback about how we can improve the project or about your
